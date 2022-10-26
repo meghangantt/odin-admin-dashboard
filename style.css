@@ -1,0 +1,20 @@
+.page {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 5fr;
+    grid-template:
+        "dash nav"
+        "dash content";
+}
+
+.dash {
+    grid-area: dash;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
