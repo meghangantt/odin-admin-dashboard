@@ -5,6 +5,7 @@
     --gray: rgb(225,232,240);
     --shadow-gray: rgb(205,211,219);
     --black: rgb(16,16,16);
+    font-family: 'Roboto', sans-serif;;
 }
 
 .page {
