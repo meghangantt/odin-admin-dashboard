@@ -22,3 +22,17 @@
     background-color: bisque;
     grid-area: content;
 }
+
+.icon-text {
+    display: grid;
+    grid-template-columns: 1.5em auto;
+    gap: 1em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.dash-options > a > .icon-text {
+    padding-left: 1em;
+}
