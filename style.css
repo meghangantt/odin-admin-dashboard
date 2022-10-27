@@ -1,3 +1,12 @@
+:root {
+    --blue: rgb(24,146,211);
+    --white: rgb(255,255,255);
+    --yellow: rgb(236,182,39);
+    --gray: rgb(225,232,240);
+    --shadow-gray: rgb(205,211,219);
+    --black: rgb(16,16,16);
+}
+
 .page {
     display: grid;
     height: 100vh;
@@ -9,18 +18,27 @@
 }
 
 .dash {
-    background-color: lightcoral;
     grid-area: dash;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.dash-options > a {
+    color: var(--white);
+}
+
+.dash-options > a > .icon-text {
+    padding-left: 1em;
 }
 
 .nav {
-    background-color:aquamarine;
     grid-area: nav;
+    background-color: var(--white);
 }
 
 .content {
-    background-color: bisque;
     grid-area: content;
+    background-color: var(--gray);
 }
 
 .icon-text {
@@ -31,8 +49,4 @@
 
 a {
     text-decoration: none;
-}
-
-.dash-options > a > .icon-text {
-    padding-left: 1em;
 }
