@@ -1,20 +1,24 @@
 .page {
     display: grid;
+    height: 100vh;
     grid-template-columns: 1fr 4fr;
     grid-template-rows: 1fr 5fr;
-    grid-template:
+    grid-template-areas: 
         "dash nav"
         "dash content";
 }
 
 .dash {
+    background-color: lightcoral;
     grid-area: dash;
 }
 
 .nav {
+    background-color:aquamarine;
     grid-area: nav;
 }
 
 .content {
+    background-color: bisque;
     grid-area: content;
 }
