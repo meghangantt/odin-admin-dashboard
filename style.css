@@ -71,11 +71,38 @@ body, html {
 .nav {
     grid-area: nav;
     background-color: var(--white);
+    padding-left: max(4px, 2vw);
+    display: grid;
+    grid-template-rows: 2fr 3fr;
+}
+
+.nav-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-top-right {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    gap: max(10px, 2vw);
+    align-items: center;
+    width: max(300px, 30%);
+}
+
+.user-options > a > .icon-text > div:last-child {
+    width: max(100px, 80%);
+}
+
+.nav-bottom {
+    display: flex;
 }
 
 .content {
     grid-area: content;
     background-color: var(--gray);
+    padding-left: max(4px, 2vw);
 }
 
 .icon-text {
@@ -88,6 +115,11 @@ a {
     text-decoration: none;
 }
 
-.button {
-    font-family: 'Roboto', sans-serif;;
+button {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--white);
+    border: none;
+    color: white;
+    width: 2.5em;
+    cursor: pointer;
 }
