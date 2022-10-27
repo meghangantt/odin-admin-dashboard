@@ -22,6 +22,30 @@
     grid-area: dash;
     background-color: var(--blue);
     color: var(--white);
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.page > .dash > .dash-header.icon-text {
+    grid-template-columns: 1fr 4fr;
+    display: grid;
+    align-items: center;
+    line-height: 0%;
+    padding: 5% 5% 2% 5%;
+}
+
+.dash-header > h1 {
+    font-size: calc(24px + 1vmax)
+}
+
+.dash-header > img {
+    width: max(25px, 100%)
+}
+
+.dash-options {
+    display: grid;
+    gap: max(4px, 2vh);
 }
 
 .dash-options > a {
@@ -29,7 +53,14 @@
 }
 
 .dash-options > a > .icon-text {
-    padding-left: 1em;
+    padding-left: max(4px, 2vw);
+    padding-right: max(4px, 2vw);
+    grid-template-columns: 15px auto;
+    align-items: center;
+}
+
+.dash-options > a > .icon-text > div {
+    font-size: 20px;
 }
 
 .nav {
@@ -50,4 +81,8 @@
 
 a {
     text-decoration: none;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;;
 }
