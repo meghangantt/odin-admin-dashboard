@@ -4,6 +4,7 @@
     --yellow: rgb(236,182,39);
     --gray: rgb(225,232,240);
     --shadow-gray: rgb(205,211,219);
+    --text-gray: rgb(100,100,100);
     --black: rgb(16,16,16);
     font-family: 'Roboto', sans-serif;;
 }
@@ -152,7 +153,7 @@ body, html {
 .content {
     grid-area: content;
     background-color: var(--gray);
-    padding: 0px max(4px, 2vw) max(4px, 2vw) max(4px, 2vw);
+    padding: 8px max(4px, 2vw) max(4px, 2vw) max(4px, 2vw);
     display: grid;
     grid-template-columns: 5fr 2fr;
     grid-template-rows: 1fr 1fr;
@@ -179,7 +180,7 @@ body, html {
 .project-square,
 .box {
     background-color: var(--white);
-    padding: 10px;
+    padding: 20px;
     border-radius: 5px;
     box-shadow: 1px 3px 5px var(--shadow-gray);
 }
@@ -187,14 +188,48 @@ body, html {
 .project-square {
     border-left: 5px solid var(--yellow);
     height: 25vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-square > h3,
+.project-square > p {
+    margin: 2px;
+    padding: 0px;
+}
+
+.project-square > p,
+.announcement-text,
+.trending-user > .icon-text > .text > p {
+    color: var(--text-gray);
 }
 
 .project-options {
-    
+    align-self: flex-end;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
 }
 
 .announcements {
     grid-area: announcements;
+}
+
+.announcement > * {
+    margin: 0px;
+}
+
+.announcement > p {
+    padding-bottom: 8px;
+}
+
+.announcement.not-last::after {
+  content: "";
+  display: inline-block;
+  height: 0.5em;
+  vertical-align: center;
+  width: 100%;
+  border-top: 1px solid var(--shadow-gray);
 }
 
 .trending {
@@ -210,6 +245,7 @@ body, html {
 
 a {
     text-decoration: none;
+    color: var(--black);
 }
 
 button {
