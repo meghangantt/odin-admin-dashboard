@@ -40,10 +40,6 @@ body, html {
     padding: 5% 5% 2% 5%;
 }
 
-.dash-header > h1 {
-    font-size: calc(24px + 1vmax)
-}
-
 .dash-header > img {
     width: max(25px, 100%)
 }
@@ -81,11 +77,11 @@ body, html {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    margin-top: 15px;
 }
 
 .search-bar {
     width: clamp(55%, 500px, 100%);
-    border: 2px solid salmon;
 }
 
 .nav-top-right {
@@ -94,7 +90,6 @@ body, html {
     gap: max(10px, 1.5vw);
     align-items: center;
     width: max(300px, 30%);
-    border: 2px solid green;
 }
 
 .user-options {
@@ -124,15 +119,30 @@ body, html {
     align-items: center;
 }
 
+.greeting.icon-text {
+    grid-template-columns: 60px auto;
+}
 
+.greeting.icon-text > .text > p {
+    font-size: small;
+}
 
 .content-options {
     display: flex;
     justify-content: center;
     width: max(300px, 40%);
-    border: 2px solid gold;
-    gap: max(10px, 2vw);
+    gap: 1.5vw;
+    margin: 10px;
     flex-wrap: nowrap;
+}
+
+.content-options > button {
+    background-color: var(--blue);
+    width: 80px;
+    max-width: 100px;
+    height: 30px;
+    border-radius: 15px;
+    flex: 1;
 }
 
 .content {
@@ -144,6 +154,7 @@ body, html {
 .icon-text {
     display: grid;
     grid-template-columns: 1.5em auto;
+    align-items: center;
     gap: 1em;
 }
 
@@ -161,11 +172,13 @@ button {
     flex-shrink: 1;
 }
 
-.content-options > button {
-    background-color: var(--blue);
-    width: 90px;
-    height: 30px;
-    border-radius: 15px;
+h1 {
+    font-size: 24px;
+}
+
+.text > * {
+    margin: 4px;
+    padding: 0px;
 }
 
 .user-icon {
