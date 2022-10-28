@@ -55,6 +55,10 @@ body, html {
     color: var(--white);
 }
 
+.dash-options > a:hover {
+    background-color: rgb(11, 122, 182);
+}
+
 .dash-options > a > .icon-text {
     padding-left: max(4px, 2vw);
     padding-right: max(4px, 2vw);
@@ -148,6 +152,10 @@ body, html {
     height: 30px;
     border-radius: 15px;
     flex: 1;
+}
+
+.content-options > button:hover {
+    background-color: rgb(11, 122, 182);
 }
 
 .content {
