@@ -83,12 +83,18 @@ body, html {
     align-items: center;
 }
 
+.search-bar {
+    width: clamp(55%, 500px, 100%);
+    border: 2px solid salmon;
+}
+
 .nav-top-right {
     display: grid;
     grid-template-columns: 1fr 8fr;
     gap: max(10px, 1.5vw);
     align-items: center;
     width: max(300px, 30%);
+    border: 2px solid green;
 }
 
 .user-options {
@@ -113,6 +119,18 @@ body, html {
 
 .nav-bottom {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-options {
+    display: flex;
+    justify-content: center;
+    width: max(300px, 40%);
+    border: 2px solid gold;
+    gap: max(10px, 2vw);
+    flex-wrap: nowrap;
 }
 
 .content {
@@ -138,11 +156,14 @@ button {
     color: white;
     width: 2.5em;
     cursor: pointer;
+    flex-shrink: 1;
 }
 
 .content-options > button {
     background-color: var(--blue);
-
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
 }
 
 .user-icon {
