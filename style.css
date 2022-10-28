@@ -151,6 +151,29 @@ body, html {
     grid-area: content;
     background-color: var(--gray);
     padding-left: max(4px, 2vw);
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2%;
+    grid-template-areas: 
+        "projects announcements"
+        "projects trending";
+}
+
+.content > div > h2 {
+    font-size: 20px;
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
 
 .icon-text {
