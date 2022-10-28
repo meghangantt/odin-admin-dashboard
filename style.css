@@ -70,6 +70,8 @@ body, html {
     padding-left: max(4px, 2vw);
     display: grid;
     grid-template-rows: 2fr 3fr;
+    position: relative;
+    box-shadow: 1px 5px 5px var(--shadow-gray);
 }
 
 .nav-top {
